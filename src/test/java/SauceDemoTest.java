@@ -19,7 +19,7 @@ public class SauceDemoTest {
     WebElement buttonAddSauceLabsFleeceJacket = driver.findElement(By.xpath("//button[contains(@data-test,'fleece-jacket')]"));
     WebElement resetAppStateButton = driver.findElement(By.xpath("//a[contains(text(),'Reset')]"));
     WebElement linkSauceLabsBikeLight = driver.findElement(By.xpath("//div[@class='inventory_item_price']/following::a/div[contains(text(),'Bike')]"));
-    WebElement backpackPrice = driver.findElement(By.xpath("//div[contains(text(),'$')] and following::div[contains(@class,'Backpack')]")); // не робе
+    WebElement tShirtImg = driver.findElement(By.xpath("//img[@class='inventory_item_img' and @alt='Sauce Labs Bolt T-Shirt']"));
     WebElement choseAZSort = driver.findElement(By.cssSelector(".product_sort_container > option[value='az']"));
     WebElement sideMenu = driver.findElement(By.cssSelector("[id$='menu-btn']"));
     WebElement shoppingCart = driver.findElement(By.cssSelector(".shopping_cart_container .shopping_cart_link"));
