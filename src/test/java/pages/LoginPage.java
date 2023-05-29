@@ -23,8 +23,8 @@ public class LoginPage extends BasePage {
     }
 
     public void standardUserLogin() {
-        userNameField.sendKeys("standard_user");
-        passwordField.sendKeys("secret_sauce");
+        userNameField.sendKeys(System.getProperty("username"));
+        passwordField.sendKeys(System.getProperty("password"));
         loginButton.click();
     }
 }
