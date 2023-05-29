@@ -17,7 +17,6 @@ public class BaseTest {
     public void setUp() {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
-        //опции позволяющие закрывать все блокирующие окна браузера
         options.addArguments("--disable-notifications");
         options.setExperimentalOption("excludeSwitches",
                 Arrays.asList("disable-popup-blocking"));
